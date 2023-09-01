@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 *{
    padding: 0;
    margin: 0;
    list-style: none;
+   font-family: 'Space Grotesk', sans-serif;
 }
 body{
    display: flex;
-   align-items: center;
+   /*align-items: center;*/
    justify-content: center;
    padding: 15px;
    background-color: #ECECEC;
@@ -23,11 +25,31 @@ header{
    padding: 12px;
    text-align: center;
 }
-form{
+.error{
+   padding: 12px;
+   display: none;
+   transition: 0.5s ease;
+}
+.display{
+   display: block;
+}
+.error-take{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+   background-color: red;
+   border-radius: 10px;
+   color: #fff;
+}
+.error-take img{
+   padding: 10px;
+}
+section{
    padding: 12px;
 }
 input{
-   margin: 5px 0;
+   margin: 7px 0;
    width: 100%;
    padding: 15px;
    border-radius: 10px;
@@ -35,6 +57,10 @@ input{
    font-size: 16px;
    outline: none;
    background-color: #ECECEC;
+   transition: 0.2s ease;
+}
+input:focus{
+   border: 2px solid #FF0063;
 }
 .forget-password{
    padding: 5px;
@@ -52,6 +78,10 @@ input{
    font-weight: bold;
    background-color: #FF0063;
    color: #fff;
+   transition: 0.2s ease;
+}
+.color{
+   background-color: #78002F;
 }
 .alt-option ul{
    display: flex;
@@ -66,6 +96,14 @@ ul li{
    padding: 10px;
    border: 2px solid #DADADA;
    border-radius: 30%;
+   transition: 0.2s ease;
+}
+ul li:hover{
+   border: 2px solid #FF0063;
+}
+ul li img{
+   width:  35px;
+   height: 35px;
 }
 .create-account{
    padding: 15px;

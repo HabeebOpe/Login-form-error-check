@@ -10,29 +10,36 @@
  <div class="container">
   <div class="content">
    <header><h1>Let's sign you in...</h1></header>
-   <form>
+   <div class="error">
+      <div class="error-take">
+         <img src="asset/google.png" style="width: 30px" alt="">
+         <p class="errorText"></p>
+      </div>
+   </div>
+   <section>
     <div class="input-section">
-     <input type="email" placeholder="Enter email">
-     <input type="password" placeholder="Enter password">
+     <input id="email" type="text" placeholder="Enter email"/>
+     <input id="password" type="password" placeholder="Enter password"/>
     </div>
     <p class="forget-password">Forgot password?</p>
-    <button class="btn" type="submit">Login</button>
-   </form>
+    <button id="btn" class="btn">Login</button>
+   </section>
    <div class="alt-option">
     <ul>
      <li>
-      <img src="asset/icon.jpg" style="border-radius: 50%; width: 40px;" alt="">
+      <img src="asset/google.png" alt="Google icon">
      </li>
      <li>
-      <img src="asset/icon.jpg" style="border-radius: 50%; width: 40px;" alt="">
+      <img src="asset/facebook.png" alt="Facebook icon">
      </li>
      <li>
-      <img src="asset/icon.jpg" style="border-radius: 50%; width: 40px;" alt="">
+      <img src="asset/ios.png" alt="iOS icon">
      </li>
     </ul>
    </div>
    <p class="create-account">Create an account? <span>Sign up</span></p>
   </div>
  </div>
+ <script src="main.js"></script>
 </body>
 </html>
